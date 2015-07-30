@@ -47,7 +47,8 @@ Hamcrest matchers:
 
 Mocks are used to isolate unit tests against external dependencies. For example, if your class under test depends on an external data access class, you can mock this to provide controlled data and eliminate the need for an external data resource.
 
-The [Mockito](https://github.com/mockito/mockito) library is included in your project build to assist you in using mocks.
+The [Mockito](https://github.com/mockito/mockito) library is not included in your project by default.
+Add  "org.mockito" % "mockito-all" % "1.9.5" % "test" to libraryDependencies in your build.sbt
 
 Using Mockito, you can mock classes or interfaces like so:
 
